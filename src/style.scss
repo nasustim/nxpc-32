@@ -1,13 +1,30 @@
+//@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",YuGothic,"ヒラギノ角ゴ ProN W3",Hiragino Kaku Gothic ProN,Arial,"メイリオ",Meiryo,sans-serif;
 }
 
 #cvs-container{
+
+    position: relative;
+
+    #svg-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    img{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+        width: 30vw;
+    }
 
     width: 100vw;
     height: 100vh;
@@ -15,8 +32,58 @@ body{
 }
 
 article{
+
+    .content{
+        //background-color: blue;
+        * {margin: 10px;}
+        h1{
+            margin: 20px;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+
+        table{
+            width: 100%;
+            tr{
+                width: 100%;
+                td{
+                    width: 32%;
+                    text-align: center;
+                }
+            }
+            .data{
+                font-size: 1.6vw;
+            }
+            .label{
+                font-size: 1vw;
+                background-color: #aaffaa;
+            }
+        }
+
+    }
+
+    display: flex;
 }
 
-#cvs{
-
+@media (min-width: 900px){
+    article{
+        .margin{
+            flex: 2;
+        }
+        .content{
+            flex: 8;
+        }
+    }
+}
+@media (max-width: 899px){
+    article{
+        .margin{
+            flex: 0;
+        }
+        .content{
+            flex: 12;
+        }
+    }
 }

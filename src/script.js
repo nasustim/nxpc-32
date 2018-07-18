@@ -63,7 +63,7 @@ setInterval(()=>{
 
     }
 
-},15000);
+},10000);
 
 
 $(window).resize(()=>{

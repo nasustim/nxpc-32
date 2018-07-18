@@ -28773,7 +28773,7 @@ setInterval(() => {
         //.append("path")
         .transition().delay(500).duration(1000).attr("fill-opacity", "0.65").attr("style", "fill:#fffeee").attr("d", "M229.2,1l78.6,131.6L233,266.5l-153.3,2.2L1.2,137.1L75.9,3.2L229.2,1 M229.8,0L75.3,2.2L0,137.1l79.2,132.6l154.5-2.2L309,132.6L229.8,0L229.8,0z").attr("transform", "translate(-259.05 -271.63)");
     }
-}, 15000);
+}, 10000);
 
 $(window).resize(() => {
     width = $("#cvs-container").innerWidth();
