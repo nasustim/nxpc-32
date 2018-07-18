@@ -1,84 +1,89 @@
 const $ = require("jquery");
+const d3 = require("d3");
 
-var i = 0;
+let width = $("#cvs-container").innerWidth();
+let height = $("#cvs-container").innerHeight();
 
-var cvs = document.getElementById("cvs");
-cvs.setAttribute("width", $("#cvs-container").width());
-cvs.setAttribute("height", $("#cvs-container").height());
+let sw = 960.67;
+let sh = 540.7;
 
-var ctx = cvs.getContext("2d");
-var img = new Image(), iw, ih, cw, ch;
-var sx, sy, sw, sh, ratio;
-var rx = [], ry = [], rw = [], rh = [], vec = [];
+let sf = sw / sh;
+let cf = width / height;
 
-function imgLoad(){
-    img.src = "res/top.jpg";
-    img.crossOrigin = 'anonymous';
-    img.onload = () =>{
-        imgCover();
-    };
+let x1, x2, y1, y2;
+
+let ratio;
+
+if(sf > cf){
+    ratio = sh / height;
+    y1 = 0;
+    y2 = sh;
+    x1 = (sw / 2) - (width * ratio / 2);
+    x2 = width * ratio;
+}else{
+    ratio = sw / width;
+    x1 = 0;
+    x2 = sw;
+    y1 = (sh / 2) - (height * ratio / 2);
+    y2 = height * ratio;
 }
 
-function imgCover(){
-    iw = img.naturalWidth;
-    ih = img.naturalHeight;
-    cw = $("#cvs-container").width();
-    ch = $("#cvs-container").height();
-    ratio = cw / ch;
-    if(ratio > 1){
-        sw = iw;
-        sx = 0;
-        sy = ( ih - ( ih / ratio ) ) / 2;
-        sh = ( ih / ratio );
-    }else{
-        sh = ih;
-        sy = 0;
-        sx = ( iw - ( iw * ratio ) ) / 2;
-        sw = ( iw * ratio );
+//console.log(x1,y1,x2,y2);
+
+let svg = d3.select("svg")
+    .attr("viewBox", `${x1} ${y1} ${x2} ${y2}`)
+    .attr("width", width+"px")
+    .attr("height", height+"px");
+
+var elem = d3.select("svg").selectAll("path");
+console.log(elem);
+
+
+setInterval(()=>{
+    let rand = [];
+    for(let i = 0; i < 5; i++){
+        rand.push(Math.floor( Math.random() * elem[0].length ));
     }
 
-    ctx.drawImage(img,sx,sy,sw,sh,0,0,cw,ch);
-    //console.log(sx,sy,sw,sh,0,0,cw,ch,ratio);
+    console.log(rand);
 
-    render();
-}
+    for(let i in rand){
 
-function render(){
+        elem[0][rand[i]].attributes.d.value = "M229.2,1l78.6,131.6L233,266.5l-153.3,2.2L1.2,137.1L75.9,3.2L229.2,1 M229.8,0L75.3,2.2L0,137.1l79.2,132.6l154.5-2.2L309,132.6L229.8,0L229.8,0z";
+        elem[0][rand[i]].attributes.transform.value = "translate(-259.05 -271.63)";
 
-    if(i == 0){
-        ctx.drawImage(img,sx,sy,sw,sh,0,0,cw,ch);
-
-        for(let j = 0; j < 80; j++){
-            rx[j] = Math.floor(Math.random() * cw);
-            ry[j] = Math.floor(Math.random() * ch);
-
-            rw[j] = Math.floor(Math.random() * cw / 10 );
-            rh[j] = Math.floor(Math.random() * ch / 10 );
-
-            vec[j] = Math.floor(Math.random() * 8 ) - 4;
-        }
+        //elem[0][rand[i]]
+          //  .transition().delay(500).duration(1000)
+           // .attr("d", "M229.2,1l78.6,131.6L233,266.5l-153.3,2.2L1.2,137.1L75.9,3.2L229.2,1 M229.8,0L75.3,2.2L0,137.1l79.2,132.6l154.5-2.2L309,132.6L229.8,0L229.8,0z")
+           // .attr("transform", "translate(-259.05 -271.63)");
 
     }
 
-    i++;
-    if(i > 60){
-        i = 0;
-    }
+},5000);
 
-
-    var imagedata = ctx.getImageData(0, 0, cw, ch);
-    for(let j = 0; j < 80; j++){
-        
-        ctx.putImageData(imagedata, rx[j], ry[j], rx[j] + i , ry[j] + vec[j] * i, rw[j], rh[j]);
-    }
-    requestAnimationFrame(render);
-}
-
-imgLoad();
 
 $(window).resize(()=>{
-    cvs.setAttribute("width", $("#cvs-container").width());
-    cvs.setAttribute("height", $("#cvs-container").height());
-    ctx = cvs.getContext("2d");
-    imgCover();
+    width = $("#cvs-container").innerWidth();
+    height = $("#cvs-container").innerHeight();
+
+    cf = width / height;
+
+    if(sf > cf){
+        ratio = sh / height;
+        y1 = 0;
+        y2 = sh;
+        x1 = (sw / 2) - (width * ratio / 2);
+        x2 = width * ratio;
+    }else{
+        ratio = sw / width;
+        x1 = 0;
+        x2 = sw;
+        y1 = (sh / 2) - (height * ratio / 2);
+        y2 = height * ratio;
+    }  
+
+    let svg = d3.select("svg")
+        .attr("viewBox", `${x1} ${y1} ${x2} ${y2}`)
+        .attr("width", width+"px")
+        .attr("height", height+"px");
 });
