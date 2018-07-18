@@ -35,13 +35,27 @@ article{
 
     .content{
         //background-color: blue;
-        * {margin: 10px;}
+        //* {margin: 10px;}
         h1{
             margin: 20px;
             text-align: center;
         }
         div{
+            margin: 10px;
             text-align: center;
+        }
+
+        a{
+            margin: 0;
+
+            text-decoration: none;
+
+            .ico{
+                width: 4vw;
+                margin: 0;
+                font-size: 3.2vw;
+                color: black;
+            }
         }
 
         table{
@@ -57,8 +71,8 @@ article{
                 font-size: 1.6vw;
             }
             .label{
-                font-size: 1vw;
-                background-color: #aaffaa;
+                font-size: 1.4vw;
+                background-color: #8899ee;
             }
         }
 

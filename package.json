@@ -7,8 +7,9 @@
     "build:html": "cd src && ejs-cli index.ejs --out ../docs --options data.json",
     "build:css": "sass src/style.scss:docs/style.css --style compressed",
     "build:js": "browserify -t babelify src/script.js > docs/script.js",
+    "build:pjs": "browserify -t babelify src/preload.js > docs/preload.js",
     "build:img": "imagemin src/res/* -o docs/res/",
-    "build": "npm run build:html && npm run build:css && npm run build:js",
+    "build": "npm run build:pjs && npm run build:html && npm run build:css && npm run build:js",
     "watch": "cd docs && python3 -m http.server"
   },
   "repository": {
@@ -22,6 +23,10 @@
   },
   "homepage": "https://github.com/nasustim/nxpc-32#readme",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "babel-core": "^6.26.3",
     "babelify": "^8.0.0",
     "createjs": "^1.0.1",

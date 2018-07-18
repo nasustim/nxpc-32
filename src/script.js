@@ -45,7 +45,7 @@ setInterval(()=>{
         rand.push(Math.floor( Math.random() * 700 ))+97;
     }
 
-    console.log(rand);
+    //console.log(rand);
 
     for(let i in rand){
 
