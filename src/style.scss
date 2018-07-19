@@ -92,7 +92,7 @@ article, footer{
             tr{
                 width: 100%;
                 td{
-                    //width: 32%;
+                    width: 32%;
                     text-align: center;
                 }
             }
@@ -169,10 +169,10 @@ footer{
             table{
 
 
-                .data{
+                .data th{
                     font-size: 1.6vw;
                 }
-                .label{
+                .label th{
                     font-size: 1.4vw;
                     background-color: #96e9fb;
                 }
@@ -243,10 +243,10 @@ footer{
             table{
 
 
-                .data{
+                .data th{
                     font-size: 3.2vw;
                 }
-                .label{
+                .label th{
                     font-size: 2.8vw;
                     background-color: #96e9fb;
                 }

@@ -14,7 +14,7 @@ let x1, x2, y1, y2;
 
 let ratio;
 
-let divWidth = $(".content div").width();
+let divWidth = $(".content").width();
 
 $("iframe").attr({
     "width": divWidth-70
