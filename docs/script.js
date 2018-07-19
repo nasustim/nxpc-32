@@ -28721,8 +28721,8 @@ return jQuery;
 const $ = require("jquery");
 const d3 = require("d3");
 
-let width = $("#cvs-container").innerWidth();
-let height = $("#cvs-container").innerHeight();
+let width = $("#cvs-container").width();
+let height = $("#cvs-container").height();
 
 let sw = 960.67;
 let sh = 540.7;
@@ -28783,8 +28783,8 @@ setInterval(() => {
 }, 10000);
 
 $(window).resize(() => {
-    width = $("#cvs-container").innerWidth();
-    height = $("#cvs-container").innerHeight();
+    width = $("#cvs-container").width();
+    height = $("#cvs-container").height();
 
     $("iframe").attr({
         "width": divWidth < $(window).width() ? divWidth - 70 : $(window).width() - 70,
