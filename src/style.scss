@@ -33,9 +33,16 @@ body{
 
 article{
 
+    display: flex;
+
+    width: 100%;
+
     .content{
         //background-color: blue;
         //* {margin: 10px;}
+
+        max-width: 100%;
+
         h1{
             margin: 20px;
             text-align: center;
@@ -43,6 +50,12 @@ article{
         div{
             margin: 10px;
             text-align: center;
+
+            max-width: 100%;
+
+            iframe{
+                max-width: 100%;
+            }
         }
 
         a{
@@ -51,10 +64,15 @@ article{
             text-decoration: none;
 
             .ico{
-                width: 4vw;
+                width: 15vw;
                 margin: 0;
                 font-size: 3.2vw;
                 color: black;
+            }
+        }
+        a:hover{
+            .ico{
+                color: grey;
             }
         }
 
@@ -72,32 +90,45 @@ article{
             }
             .label{
                 font-size: 1.4vw;
-                background-color: #8899ee;
+                background-color: #96e9fb;
             }
         }
 
     }
 
-    display: flex;
 }
 
 @media (min-width: 900px){
     article{
         .margin{
-            flex: 2;
+            flex: 0;
         }
         .content{
-            flex: 8;
+            flex: 100;
         }
     }
+
+    .prof{
+        img{
+            max-width: 80%;
+        }
+    }
+
 }
 @media (max-width: 899px){
     article{
         .margin{
-            flex: 0;
+            flex: 10;
         }
         .content{
-            flex: 12;
+            flex: 80;
         }
     }
+
+    .prof{
+        img{
+            max-width: 100%;
+        }
+    }
+
 }

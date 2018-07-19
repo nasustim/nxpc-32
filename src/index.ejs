@@ -65,12 +65,17 @@
             </div>
 
             <div>
-                <h1>Players</h1>
-                <div>
-                    <h2>HIBINO</h2>
-                    <img src="">
-                    <p>aaaaaaa</p>
-                </div>
+                <% for(let i in member){ %>
+
+                    <div class="prof">
+                        <h2><%- member[i].name %></h2>
+                        <img src="<%- member[i].img %>">
+                        <% for(let j in member[i].profile){ %>
+                            <p><%- member[i].profile[j] %></p>
+                        <% } %>
+                    </div>
+
+                <% } %>
             </div>
 
         </div>

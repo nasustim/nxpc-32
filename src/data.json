@@ -1,7 +1,20 @@
 {
-    "gen": [
+    "member": [
         {
-            "title": ""
+            "name": "HIBINO",
+            "profile": [
+                "1994",
+                "gihu"
+            ],
+            "img": "res/hibino17.jpg"
+        },
+        {
+            "name": "HIBINO",
+            "profile": [
+                "1994",
+                "gihu"
+            ],
+            "img": "res/hibino17.jpg"
         }
     ]
 }
