@@ -28734,6 +28734,12 @@ let x1, x2, y1, y2;
 
 let ratio;
 
+let divWidth = $(".content div").width();
+
+$("iframe").attr({
+    "width": divWidth - 70
+});
+
 if (sf > cf) {
     ratio = sh / height;
     y1 = 0;
@@ -28778,6 +28784,10 @@ setInterval(() => {
 $(window).resize(() => {
     width = $("#cvs-container").innerWidth();
     height = $("#cvs-container").innerHeight();
+
+    $("iframe").attr({
+        "width": divWidth - 70
+    });
 
     cf = width / height;
 

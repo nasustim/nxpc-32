@@ -31,21 +31,31 @@ body{
     background-color: #464646;
 }
 
-article{
+
+article, footer{
 
     display: flex;
 
-    width: 100%;
+    .one-h{
+        flex: 100;
+    }
 
     .content{
         //background-color: blue;
         //* {margin: 10px;}
 
-        max-width: 100%;
+        //max-width: 100%;
+
+
+        //width: 100%;
 
         h1{
             margin: 20px;
             text-align: center;
+        }
+        .access{
+            margin-left: 0;
+            margin-right: 0;
         }
         div{
             margin: 10px;
@@ -53,8 +63,12 @@ article{
 
             max-width: 100%;
 
+            
+
             iframe{
-                max-width: 100%;
+                //max-width: 100%;
+                text-align: center;
+                margin: 0;
             }
         }
 
@@ -64,9 +78,6 @@ article{
             text-decoration: none;
 
             .ico{
-                width: 15vw;
-                margin: 0;
-                font-size: 3.2vw;
                 color: black;
             }
         }
@@ -81,53 +92,187 @@ article{
             tr{
                 width: 100%;
                 td{
-                    width: 32%;
+                    //width: 32%;
                     text-align: center;
                 }
             }
-            .data{
-                font-size: 1.6vw;
-            }
-            .label{
-                font-size: 1.4vw;
-                background-color: #96e9fb;
+        }
+        .prof{
+            .prof-row{
+
+                
+
+                display: flex;
+
+                flex-direction: row;
+
+                .prof-sent{
+                    h2{
+                        text-align: center;
+                    }
+                    text-align: left;
+                }
+
+                .img-wrap{
+                    img{
+                        width: 100%;
+                    }
+                }
+
             }
         }
 
     }
+}
 
+
+footer{
+
+    text-align: center;
+
+    background-color: #96e9fb;
+
+
+    div{
+        display: inline-block;
+    }
+    
 }
 
 @media (min-width: 900px){
-    article{
+    footer, article{
         .margin{
-            flex: 0;
+            flex: 20;
         }
         .content{
-            flex: 100;
+            flex: 60;
+
+            h1{
+                font-size: 2.4vw;
+            }
+            h2{
+                font-size: 1.8vw;
+            }
+            p{
+                font-size: 1.4vw;
+            }
+
+            .ico{
+
+                margin: 0 5vw;
+
+                width: 3vw;
+                height: 3vw;
+                font-size: 0.7vw;
+            }
+
+            table{
+
+
+                .data{
+                    font-size: 1.6vw;
+                }
+                .label{
+                    font-size: 1.4vw;
+                    background-color: #96e9fb;
+                }
+            }
+
+
+        }
+
+        
+    }
+
+    footer{
+
+        img{
+            height: 3.7vw;
         }
     }
 
     .prof{
-        img{
-            max-width: 80%;
+        .prof-row{
+            .img-wrap{
+                flex: 4;
+
+            }
+            .prof-sent{
+                flex: 6;
+            }
         }
     }
 
 }
 @media (max-width: 899px){
-    article{
+    footer, article{
         .margin{
-            flex: 10;
+            flex: 0;
         }
         .content{
-            flex: 80;
+            flex: 100;
+
+            & > div{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+
+            h1{
+                font-size: 10.4vw;
+            }
+            h2{
+                font-size: 3.6vw;
+            }
+            p{
+                font-size: 3.2vw;
+            }
+
+
+            .ico{
+
+
+                margin: 0 5vw;
+
+                width: 5vw;
+                height: 5vw;
+                font-size: 0.7vw;
+            }
+
+
+            table{
+
+
+                .data{
+                    font-size: 3.2vw;
+                }
+                .label{
+                    font-size: 2.8vw;
+                    background-color: #96e9fb;
+                }
+            }
+
+
+        }
+    }
+
+    footer{
+
+        img{
+            height: 10vw;
         }
     }
 
     .prof{
-        img{
-            max-width: 100%;
+        .prof-row{
+            .img-wrap{
+
+                flex: 4;
+
+            }
+            .prof-sent{
+                flex: 6;
+            }
         }
     }
 
