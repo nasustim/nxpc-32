@@ -17,7 +17,8 @@ let ratio;
 let divWidth = $(".content").width();
 
 $("iframe").attr({
-    "width": (divWidth < $(window).width()) ? divWidth-70 : $(window).width()-70
+    "width": (divWidth < $(window).width()) ? divWidth-70 : $(window).width()-70,
+    "height": (divWidth < $(window).width()) ? divWidth-70 : $(window).width()-70
 });
 
 
@@ -80,7 +81,8 @@ $(window).resize(()=>{
 
 
     $("iframe").attr({
-        "width": (divWidth < $(window).width()) ? divWidth-70 : $(window).width()-70
+        "width": (divWidth < $(window).width()) ? divWidth-70 : $(window).width()-70,
+        "height": (divWidth < $(window).width()) ? divWidth-70 : $(window).width()-70
     });
 
     cf = width / height;
