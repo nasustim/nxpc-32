@@ -72,7 +72,13 @@ article{
         //    margin: 10px;
 
 
-            margin: 3vw;
+        @media (min-width: 900px){
+            margin: 20px;
+        }
+        @media (max-width: 899px){
+            margin: 6vw;
+        }
+
             text-align: center;
 
             max-width: 100%;
@@ -122,6 +128,10 @@ article{
                         text-align: center;
                     }
                     text-align: left;
+
+                    p{
+                        
+                    }
                 }
 
                 .img-wrap{
@@ -206,6 +216,9 @@ footer{
     }
 
     .prof{
+
+
+
         .prof-row{
 
 

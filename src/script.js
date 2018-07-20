@@ -44,7 +44,7 @@ let svg = d3.select("svg")
     .attr("height", height+"px");
 
 var elem = d3.select("svg").selectAll("path");
-console.log(elem);
+//console.log(elem);
 
 
 setInterval(()=>{

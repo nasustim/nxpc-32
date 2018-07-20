@@ -1,20 +1,72 @@
 {
     "member": [
         {
-            "name": "HIBINO",
+            "name": "f&u",
             "profile": [
-                "1994",
-                "gihu"
+                "コンピュータミュージックに電子楽器やエレキベース、ウィンドシンセを混ぜ合わせたパフォーマンスを行う。"
+            ],
+            "img": "res/fu.jpg"
+        },{
+            "name": "kohei nakada",
+            "profile": [
+                "IAMAS修士1年在学。ビジュアルプログラマ。ライブコーディングでビジュアル表現を行う。"
+            ],
+            "img": "res/nakada.jpg"
+        },{
+            "name": "Mitsuhiro Hibino",
+            "profile": [
+                "1994年11月岐阜県岐阜市出身、IAMASのM2。",
+                "プログラミングの研究をしていますがジェネりません。",
+                "<a target=\"_blank\" href=\"https://nasustim.com\">https://nasustim.com</a>"
             ],
             "img": "res/hibino17.jpg"
-        },
-        {
-            "name": "HIBINO",
+        },{
+            "name": "大野",
             "profile": [
-                "1994",
-                "gihu"
             ],
-            "img": "res/hibino17.jpg"
+            "img": "res/KakuyaShiraishi.jpg"
+        },{
+            "name": "Kei Kimura",
+            "profile": [
+                "サクソフォニスト。",
+                "VJ柴田一秀に面白いこと仕掛けられながら演奏します。"
+            ],
+            "img": "res/keikimura.jpg"
+        },{
+            "name": "DJスベリダイ(柴田カズヒデ)",
+            "profile": [
+                "アーティスト／プログラマ。既存のツールに頼らず自作ソフトウェアを駆使した動的表現で、ビジュアルプログラミングによる映像、MV、VJ、インタラクティブ作品など、システムレベルからの制作を手がける。"
+            ],
+            "img": "res/KakuyaShiraishi.jpg"
+        },{
+            "name": "森田",
+            "profile": [
+            ],
+            "img": "res/KakuyaShiraishi.jpg"
+        },{
+            "name": "James Scrutinizer Trio",
+            "profile": [
+                "James Scrutinizer (piano) による(架空の)リーダートリオ。残念ながらJamesは(常に)事情があり今回は(も)ライブには参加することが出来ない。今回の(架空の)日本公演のサポートメンバー(という設定)であるHiromu Ehara (Guitar, Effecter, LapTop) とHiroshi Yamato (Bass, Effecter, LapTop, DJMixer) によって1曲のみジャズスタンダードナンバー「を使って」ライブを行う(予定)。"
+            ],
+            "img": "res/JamesScrutinizerTrio.jpg"
+        },{
+            "name": "たけしはやし/takeshi HAYASHI",
+            "profile": [
+                "バロックから現代音楽まで広く関心を持つ。ロックは、イタリア、ドイツのプログレ好き。（20代は、Genesis、King Crimson等のコピーやオリジナルをバンドで演奏、キーボード担当。）生楽器音や環境音も用いてMax/MSPでの音響合成、アナログシンセも使ってDAWで曲作りを行っている。今回は、ラップトップやアナログシンセ（セミモジュラー等）でミニマルを展開する。"
+            ],
+            "img": "res/Nx_HAYASHI.jpg"
+        },{
+            "name": "津曲洸太/Kota Tsumagari",
+            "profile": [
+                "音響スタッフ。今回VJで初出演します。"
+            ],
+            "img": "res/kotaTsumagari.jpg"
+        },{
+            "name": "Kakuya Shiraishi",
+            "profile": [
+                "アーティスト／プログラマ。既存のツールに頼らず自作ソフトウェアを駆使した動的表現で、ビジュアルプログラミングによる映像、MV、VJ、インタラクティブ作品など、システムレベルからの制作を手がける。"
+            ],
+            "img": "res/KakuyaShiraishi.jpg"
         }
     ]
 }

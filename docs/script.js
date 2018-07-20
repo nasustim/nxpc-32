@@ -28760,7 +28760,8 @@ if (sf > cf) {
 let svg = d3.select("svg").attr("viewBox", `${x1} ${y1} ${x2} ${y2}`).attr("width", width + "px").attr("height", height + "px");
 
 var elem = d3.select("svg").selectAll("path");
-console.log(elem);
+//console.log(elem);
+
 
 setInterval(() => {
     let rand = [];

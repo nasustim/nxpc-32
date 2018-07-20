@@ -28,7 +28,7 @@
 </head>
 <body>
     <div id="cvs-container">
-        <div id="svg-container"><%- include("res/mainVisual.svg"); %></div>
+        <div id="svg-container"><%- include("mainVisual.svg"); %></div>
         <img src="res/logo.svg" alt="NxPC.Live vol.32">
     </div>
     <article>
@@ -75,13 +75,13 @@
                         <th>Time</th><th>Sound</th><th>Visual</th>
                     </tr>
                     <tr class="data">
-                        <th>18:00</th><th>伏田・兼城</th><th>中田</th>
+                        <th>18:00</th><th>f&u</th><th>kohei nakada</th>
                     </tr>
                     <tr class="data">
-                        <th>18:25</th><th>hibino</th><th>大野</th>
+                        <th>18:25</th><th>Mitsuhiro Hibino</th><th>大野</th>
                     </tr>
                     <tr class="data">
-                        <th>18:50</th><th>木村</th><th>柴田</th>
+                        <th>18:50</th><th>Kei Kimura</th><th>DJスベリダイ(柴田カズヒデ)</th>
                     </tr>
                     <tr class="data">
                         <th>19:10</th><th>森田</th><th></th>
@@ -90,10 +90,10 @@
                         <th>19:35</th><th>James Scrutinizer Trio</th><th></th>
                     </tr>
                     <tr class="data">
-                        <th>20:10</th><th>林</th><th>津曲</th>
+                        <th>20:10</th><th>たけしはやし/takeshi HAYASHI</th><th>津曲洸太/Kota Tsumagari</th>
                     </tr>
                     <tr class="data">
-                        <th>20:25</th><th>柴田</th><th>白石</th>
+                        <th>20:25</th><th>DJスベリダイ(柴田カズヒデ)</th><th>Kakuya Shiraishi</th>
                     </tr>
                 </table>
             </div>
@@ -113,7 +113,7 @@
 
                             <h2><%- member[i].name %></h2>
                             <% for(let j in member[i].profile){ %>
-                                <p><%= member[i].profile[j] %></p>
+                                <p><%- member[i].profile[j] %></p>
                             <% } %>
                             </div>
                         </div>
