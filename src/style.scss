@@ -72,11 +72,23 @@ article{
         //    margin: 10px;
 
 
-        @media (min-width: 900px){
-            margin: 20px;
+        .img-wrap{
+            @media (min-width: 900px){
+    
+                margin: 20px;
+            }
+            @media (max-width: 899px){
+                margin: 6vw 6vw 6vw 6vw;
+            }
         }
-        @media (max-width: 899px){
-            margin: 6vw;
+        .prof-sent{
+            @media (min-width: 900px){
+    
+                margin: 20px;
+            }
+            @media (max-width: 899px){
+                margin: 6vw 6vw 14vw 6vw;
+            }
         }
 
             text-align: center;
