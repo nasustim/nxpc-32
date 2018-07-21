@@ -8,8 +8,7 @@
     "build:css": "sass src/style.scss:docs/style.css --style compressed",
     "build:js": "browserify -t babelify src/script.js > docs/script.js",
     "build:pjs": "browserify -t babelify src/preload.js > docs/preload.js",
-    "build:img": "imagemin src/res/* -o docs/res/",
-    "build:img2": "gulp imgcover && gulp imagemin",
+    "build:img": "gulp imgcover && gulp imagemin",
     "build": "npm run build:pjs && npm run build:html && npm run build:css && npm run build:js",
     "watch": "cd docs && python3 -m http.server"
   },
