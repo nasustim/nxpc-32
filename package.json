@@ -10,7 +10,8 @@
     "build:pjs": "browserify -t babelify src/preload.js > docs/preload.js",
     "build:img": "gulp imgcover && gulp imagemin",
     "build": "npm run build:pjs && npm run build:html && npm run build:css && npm run build:js",
-    "watch": "cd docs && python3 -m http.server"
+    "watch": "cd docs && python3 -m http.server",
+    "deploy": "rm -fr ./vol.32 && cp -r docs vol.32"
   },
   "repository": {
     "type": "git",
