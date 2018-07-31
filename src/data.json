@@ -13,13 +13,6 @@
             ],
             "img": "res/nakada.jpg"
         },{
-            "name": "Mitsuhiro Hibino",
-            "profile": [
-                "1994年11月岐阜県岐阜市出身、ソフトウェアエンジニアでIAMASのM2。",
-                "プログラミング言語の研究をしていますがジェネれません。"
-            ],
-            "img": "res/hibino17.jpg"
-        },{
             "name": "大野正俊",
             "profile": [
                 "IAMAS M1",
@@ -40,19 +33,6 @@
                 "活動はまだはじめたてホヤホヤのアツアツ。"
             ],
             "img": "res/kazuhide-18.jpg"
-        },{
-            "name": "mrt(ry",
-            "profile": [
-                "M1。ソナタ形式（=豪華なA→B→A）でEDMやるとか思ってたんですが、雲行きが怪しいです。よく考えたらソナタ自体書くのが数年振りでした。",
-                "何かしらやります。"
-            ],
-            "img": "res/morita.jpg"
-        },{
-            "name": "James Scrutinizer Trio",
-            "profile": [
-                "James Scrutinizer (piano) による(架空の)リーダートリオ。残念ながらJamesは(常に)事情があり今回は(も)ライブには参加することが出来ない。今回の(架空の)日本公演のサポートメンバー(という設定)であるHiromu Ehara (Guitar, Effecter, LapTop) とHiroshi Yamato (Bass, Effecter, LapTop, DJMixer) によって1曲のみジャズスタンダードナンバー「を使って」ライブを行う(予定)。"
-            ],
-            "img": "res/JamesScrutinizerTrio.jpg"
         },{
             "name": "たけしはやし/takeshi HAYASHI",
             "profile": [

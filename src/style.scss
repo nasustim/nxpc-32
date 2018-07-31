@@ -143,9 +143,9 @@ article{
             width: 100%;
             tr{
                 width: 100%;
-                td{
-                    width: 32%;
-                    text-align: center;
+                .label th{
+                    //width: 32%;
+                    //text-align: center;
                 }
             }
         }
