@@ -13,6 +13,12 @@
             ],
             "img": "res/nakada.jpg"
         },{
+            "name": "Kakuya Shiraishi",
+            "profile": [
+                "アーティスト／プログラマ。既存のツールに頼らず自作ソフトウェアを駆使した動的表現で、ビジュアルプログラミングによる映像、MV、VJ、インタラクティブ作品など、システムレベルからの制作を手がける。"
+            ],
+            "img": "res/KakuyaShiraishi.jpg"
+        },{
             "name": "大野正俊",
             "profile": [
                 "IAMAS M1",
@@ -45,12 +51,6 @@
                 "音響スタッフ。今回VJで初出演します。"
             ],
             "img": "res/kotaTsumagari.jpg"
-        },{
-            "name": "Kakuya Shiraishi",
-            "profile": [
-                "アーティスト／プログラマ。既存のツールに頼らず自作ソフトウェアを駆使した動的表現で、ビジュアルプログラミングによる映像、MV、VJ、インタラクティブ作品など、システムレベルからの制作を手がける。"
-            ],
-            "img": "res/KakuyaShiraishi.jpg"
         }
     ]
 }
