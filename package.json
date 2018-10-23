@@ -31,7 +31,7 @@
     "babel-core": "^6.26.3",
     "babelify": "^8.0.0",
     "createjs": "^1.0.1",
-    "d3": "^5.5.0",
+    "d3": "^5.7.0",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
@@ -40,6 +40,6 @@
     "imagemin-pngquant": "^6.0.0",
     "jimp": "^0.2.28",
     "jquery": "^3.3.1",
-    "uglify-js": "^2.6.0"
+    "uglify-js": "^2.8.29"
   }
 }
