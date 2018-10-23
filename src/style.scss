@@ -143,10 +143,16 @@ article{
             width: 100%;
             tr{
                 width: 100%;
-                td{
-                    width: 32%;
-                    text-align: center;
+
+
+                th{
+                    padding: 2px 1px;
                 }
+                
+            }
+            .label th{
+                //width: 32%;
+                text-align: center;
             }
         }
         .prof{
